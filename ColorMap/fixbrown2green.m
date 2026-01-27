@@ -1,0 +1,43 @@
+function Cmap=fixbrown2green(WithNaN)
+
+ 
+% mycolorpoint=[[84 47 5];...
+%     [141 80 13];...
+%     [191 128 49];...
+%     [224 195 127];...
+%     [211 232 198];...
+%     [195 222 148];...    
+%     [86 157 53];...
+%     [20 91 48]];
+% mycolorposition=[1 11 21 31 41 51 61 71];
+% mycolormap_r=interp1(mycolorposition,mycolorpoint(:,1),1:71,'linear','extrap');
+% mycolormap_g=interp1(mycolorposition,mycolorpoint(:,2),1:71,'linear','extrap');
+% mycolormap_b=interp1(mycolorposition,mycolorpoint(:,3),1:71,'linear','extrap');
+n = 50;
+Cmap = [repmat([84 47 5],[n 1]);
+    repmat([141 80 13],[n 1]);...
+    repmat([191 128 49],[n 1]);...
+    repmat([224 195 127],[n 1]);...
+    repmat([211 232 198],[n 1]);...
+    repmat([195 222 148],[n 1]);...    
+    repmat([86 157 53],[n 1]);...
+    repmat([20 91 48],[n 1])];    
+    colormap=Cmap./255;
+
+
+% colormap=[mycolormap_r',mycolormap_g',mycolormap_b']./255;
+
+Brown2Green=round(colormap*10^4)/10^4;%����4λС��
+% Brown2Green=flipud(colormap);
+ 
+Cmap=Brown2Green;
+
+    if nargin<1
+      WithNaN=0;
+    end
+    
+    if WithNaN ~= 0
+        Cmap=[1,1,1;Cmap];
+    end
+    
+end
