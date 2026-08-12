@@ -13,7 +13,8 @@ system(['mkdir -p ', PathOut]);
 % ===============================
 % 模型 & 时期 & 情景
 % ===============================
-ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+% ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR','CNRM-ESM2-1','IPSL-CM6A-LR','NorESM2-MM'};
 
 PeriodList = { ...
     struct('name','baseline', ...

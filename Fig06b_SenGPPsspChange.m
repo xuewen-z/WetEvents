@@ -40,8 +40,8 @@ for ss = 1:numel(SSPList)
         Data = load(File);
 
         % ===== 只改这里：变量名 =====
-        RiskAll(:,:,m) = Data.DeltaSenTotal;
-        % RiskAll(:,:,m) = Data.DeltaSen;
+        % RiskAll(:,:,m) = Data.DeltaSenTotal;
+        RiskAll(:,:,m) = Data.DeltaSen;
         % RiskAll(:,:,m) = Data.DeltaRec;
     end
 

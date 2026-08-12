@@ -7,7 +7,9 @@ PathOut = '../output/25_DeffRecCMIP6GPP/';
 system(['rm -rf ',PathOut]);
 system(['mkdir -p ',PathOut]);
 
-ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+% ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR','CNRM-ESM2-1','IPSL-CM6A-LR','NorESM2-MM'};
+
 SSPList  = {'ssp126','ssp245','ssp370','ssp585'};
 
 for i = 1:numel(ModeList)

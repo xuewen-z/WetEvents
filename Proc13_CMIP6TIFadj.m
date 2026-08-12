@@ -2,11 +2,11 @@ clear; clc;
 
 Path_CMIP6TIF = '../input/CMIP6TIFmon/';
 Path_Output   = '../output/13_CMIP6TIFadj/';
-
+% 
 system(['rm -rf ',Path_Output]);
 system(['mkdir -p ',Path_Output]);
 
-ModeList = {'CMCC-ESM2','CNRM-ESM2-1','IPSL-CM6A-LR','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','CNRM-ESM2-1','IPSL-CM6A-LR','MPI-ESM1-2-HR','NorESM2-MM'};
 SSPList  = {'historical','ssp126','ssp245','ssp370','ssp585'};
 
 

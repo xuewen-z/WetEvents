@@ -7,7 +7,9 @@ Path_Out    = '../output/23b_MMEDeffSen/';
 system(['rm -rf ',Path_Out]);
 system(['mkdir -p ',Path_Out]);
 
-ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+% ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR','CNRM-ESM2-1','IPSL-CM6A-LR','NorESM2-MM'};
+
 SSPList  = {'ssp126','ssp245','ssp370','ssp585'};
 
 for s = 1:numel(SSPList)

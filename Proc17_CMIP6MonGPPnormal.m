@@ -27,7 +27,7 @@ Mask = (LandCover >= 1 & LandCover <= 10);   % 自然植被
 % ===============================
 % 模型
 % ===============================
-ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR','CNRM-ESM2-1','IPSL-CM6A-LR','NorESM2-MM'};
 
 % ===============================
 % 时间段定义（关键修改点）

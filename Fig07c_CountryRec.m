@@ -132,8 +132,10 @@ for s = 1:numel(SSPList)
 
     % 标题
     text('String',[CapList{s},IndName{s},' ensemble mean resilience change'],...
-        'Units','Normalized','Position',[0.03 0.1],'FontSize',20);
+        'Units','Normalized','Position',[0.03 0.05],'FontSize',20);
 
+   pause(5); set(gcf, 'Position', [100, 100, 1200, 600], 'DefaultAxesFontSize', 12);
+ 
     % ===============================
     % 输出
     % ===============================

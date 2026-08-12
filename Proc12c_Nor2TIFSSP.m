@@ -11,6 +11,8 @@ TimeSpan = 12;
 ModeList = {'NorESM2-MM'};   % 先举例 MPI 模型
 SSPList  = {'ssp126','ssp245','ssp370','ssp585'};
 
+
+
 for i = 1:length(ModeList)
     ModeName = ModeList{i};
 
@@ -36,7 +38,7 @@ for i = 1:length(ModeList)
         end
         
          % delete Year 保留 2071-2100
-         GeoTempAll(:,:,1:672) = []; 
+         GeoTempAll(:,:,1:671) = []; 
 
         % ---- 从 2071 开始逐年计算 ----
         Year = 2071 - 1;  % initialYear - 1

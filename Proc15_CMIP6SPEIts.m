@@ -20,11 +20,12 @@ Mask = (LandCover == 0 | LandCover == 17 | LandCover == 13 | ...
         LandCover == 15 | LandCover == 16);
 
 % 模型 & 情景 & SPEI
-ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR'};
+ModeList = {'CMCC-ESM2','MPI-ESM1-2-HR','CNRM-ESM2-1','IPSL-CM6A-LR','NorESM2-MM'};
+
 SSPList  = {'historical','ssp126','ssp245','ssp370','ssp585'};
 SPEIList = {'SPEI_3'};
 
-for i = 2:numel(ModeList)
+for i = 1:numel(ModeList)
     ModeName = ModeList{i};
 
     for j = 1:numel(SPEIList)
