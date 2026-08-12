@@ -32,6 +32,8 @@ CMIP6 model and SSP scenario for a 1981–2010 baseline vs. 2071–2100 future p
 the future minus baseline change (Δ) per model, the multi-model-ensemble mean (MME) across
 models, and aggregates results to the country scale.
 
+**4. Figure generation** — separate `Fig##_*.m` scripts consume the aggregated outputs
+above to produce the manuscript figures
 ## Recommended execution order
 
 Within each stage, run scripts strictly by their numeric prefix. High-level order:
